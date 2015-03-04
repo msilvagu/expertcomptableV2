@@ -1,0 +1,547 @@
+@font-face{
+    font-family : "ALLER";
+    src : url('../fonts/ALLER.TTF'),url('../fonts/ALLER.eot');
+}
+
+
+@font-face{
+    font-family : "ALLER_LT";
+    src : url('../fonts/ALLER_LT.TTF'), url('../fonts/ALLER_LT.eot');
+}
+
+@font-face{
+    font-family : "ALLER_RG";
+    src : url('../fonts/ALLER_RG.TTF'), url('../fonts/ALLER_RG.eot');
+}
+
+@font-face{
+    font-family : "ALLER_BDIT";
+    src : url('../fonts/ALLER_BDIT.TTF');
+}
+
+@font-face{
+    font-family : "ALLER_IT";
+    src : url('../fonts/ALLER_IT.TTF');
+}
+
+
+@charset "UTF-8";
+
+html, body {
+    font-family : "ALLER_LT";
+    color:#ffffff;
+    font-size:115%;
+    margin:0;
+    padding:0;
+    display: block;
+    background: url(../img/backgroundExpertComptable-responsiveW1400.png) no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+  }
+
+
+.container{
+  margin: auto;
+  width: 95%;
+}
+
+header ul{
+    display: block;
+    padding-left: 0em;
+    overflow:auto;
+    
+}
+
+  header li {
+    float:left;
+    width:20%;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    list-style-type:none;
+    margin:0;
+
+  }
+
+header li p{
+    display: inline-block;
+    margin:0;
+    padding:0;
+} 
+
+
+  header button{
+  font-family : "ALLER";
+  background-color:#81a640;
+  color: #ffffff;
+  font-size:150%;
+  margin-top:0.5em; 
+  float: right;
+  display: block;
+  overflow: auto;
+ }
+
+
+ section.wrapper-title{
+    background-color: #ffffff;
+    margin:0;
+    padding:0.05em 0 0;
+    text-align:center;
+
+}
+
+.wrapper-center{
+  display: block;
+}
+
+.wrapper-center article{
+  display: inline-block;
+  position:absolute;
+  z-index:3;
+  float: left;
+}
+
+.wrapper-center, h2{
+  font-family : "ALLER_LT";
+  margin:0;
+}
+
+.wrapper-center strong{
+  font-family : "ALLER_RG";
+}
+
+
+ul.advice{
+  font-size: 1em;
+  padding-left: 0;
+  list-style-type:none;
+  margin-top: 0;
+  display: inline;
+  vertical-align: middle;
+}
+
+.advice  li > p{
+  padding-left: 0.4em;
+  vertical-align: middle;
+  display: inline-block;
+  margin:0.5em 0 0.5em;
+}
+
+ul.advice > li > img{
+  vertical-align: middle;
+}
+
+
+section.personnage{ 
+  z-index: 2;
+  display: inline-block;
+  margin-left: 23em;
+  margin-top: 6em;
+  position: relative;
+}
+
+div#step-1, div#step-2{
+  display: inline-block; 
+  position: absolute;
+  margin-left: 45em;
+  font-size: 0.6em;
+  z-index: 2;
+}
+
+#step-2 form{
+  border: 0.4em solid #73b324;
+  outline: 0.3em solid #427915;
+  background-color: #ffffff;
+  font-size: 110%;
+  padding: 1em 2.5em;
+  color: #7e7e7e;
+}
+
+div#step-1 h2, div#step-2 h2{
+  font-size: 2.5em; 
+  color:#afda63;
+  text-align: center; 
+}
+
+fieldset{
+  border: 0.1em solid #73b324;
+  padding:0.5em;
+}
+
+form{
+  border: 0.4em solid #73b324;
+  outline: 0.3em solid #427915;
+  background-color: #ffffff;
+  font-size: 140%;
+  padding: 2em 3.5em;
+  color: #7e7e7e;
+}
+
+
+form button{
+      background-color: #00afb2;
+      text-align: center;
+      color: #ffffff;
+      font-family : "ALLER";
+      vertical-align: middle;
+      margin: 0em 8em;
+      font-size: 1.2em;
+      padding: 0.5em;
+  }
+
+div#step-2{
+  display: none;
+}
+
+.form-group, .form-group-2{
+  padding-bottom: 1em;
+  vertical-align: middle;
+}
+
+.form-group-2{
+  padding-bottom: 1em;
+  padding-left: 2em;
+  vertical-align: middle;
+}
+
+.form-group label {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0.5em;
+    font-size: 1.2em;
+    width: 9em;
+}
+
+.form-group-2 label {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0.5em;
+    font-size: 1em;
+    width: 9em;
+}
+
+.form-group > img {
+    vertical-align: middle;
+}
+
+input[placeholder]{
+  color: #73b324;
+  text-align: center;
+  font-family : "ALLER_RG";
+  font-size: 80%;
+}
+
+form input{
+  display:inline-block;
+}     
+
+.achat, .vente, .salaries {
+    width: 5em;
+    height: 1.5em;
+}
+
+.coordonnees{
+  width: 30em;
+  height: 1.5em;
+}
+
+div.civilites{
+  display: inline-block;
+  width: 29em;
+}
+
+div.civilites p{
+  display: inline-block;
+  width: 3em;
+  padding: 1em;
+  margin: 0;
+}
+
+.resultat-calcul{
+  font-family : "ALLER";
+  color: #00afb2;
+  text-align: center;
+  display: block;
+  font-size: 120%;
+}
+
+h3.partenaires {
+  color: #00A1A4;
+  display: inline-block;
+  font-family : "ALLER_LT";
+  vertical-align: left;
+  text-align: center;
+  margin-left:10% ;
+  font-size: 1.2em;
+  width: 9em;
+
+}
+
+h3.partenaires > strong{
+  font-family : "ALLER";
+  font-size: 1.5em;
+
+}
+
+/****slider responsive begin****/
+
+a {
+  color: #222;
+  }
+
+.rslides{
+  margin: 0 auto;
+  width: 95%;
+  display: inline-block;
+  }
+
+.rslides_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #ffffff;
+  }
+
+.centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../img/themes.gif") no-repeat left top;
+  margin-top: -45px;
+  }
+
+.centered-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+.transparent-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 0;
+  left: 0;
+  display: block;
+  background: #fff; /* Fix for IE6-9 */
+  opacity: 0;
+  filter: alpha(opacity=1);
+  width: 48%;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 91%;
+  }
+
+.transparent-btns_nav.next {
+  left: auto;
+  right: 0;
+  }
+
+.large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("../img/themes.gif") no-repeat left 50%;
+  width: 38px;
+  }
+
+.large-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+  }
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none;
+  }
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+  margin-top: 10px;
+  text-align: center;
+  }
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px;
+  }
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0,0,0, .2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  width: 9px;
+  height: 9px;
+  }
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+  background: #222;
+  background: rgba(0,0,0, .8);
+  }
+/****slider responsive end****/
+
+ @media screen and (min-width: 0px) and (max-width: 600px) {
+
+    .container{
+      margin: auto;
+      width: 95%;
+    }
+
+     header li, header button{
+        float:none;
+        width:100%;
+        text-align: center;
+        font-size: 90%;
+     }
+
+    header li p{
+      text-align: left;
+    } 
+
+    section.wrapper-title  h1  img{ 
+        height: 95%;
+        width: 95%;
+    }
+
+    h3.partenaires {
+    font-size: 0.8em;
+    width: 100%;
+    margin: 0;
+    }
+
+    h3.partenaires strong{
+      font-style: bold;
+      font-size: 1em;
+    }
+
+    section.personnage{
+      display: none;
+    }
+
+    .wrapper-center article{
+      display: block;
+      position: relative;
+      float:initial;
+      z-index: 0;
+    }
+
+    div#step-1{
+      display: inline-block; 
+      margin:0 auto;
+      font-size: 0.6em;
+      position: inherit;
+    }
+
+    div#step-2{
+      display: inline-block; 
+      margin:0 auto;
+      font-size: 0.6em;
+      position: inherit;
+    }
+
+    div#step-2{
+      display: none;
+    }
+
+    .form-group-2 label {
+      text-align: center;
+    }
+
+    ul.advice{
+      font-size: 0.7em;
+      display: inline-block;
+    }
+
+    ul.advice > li > img{
+      width: 10%;
+    }
+    
+   
+
+    div#step-1 h2 {
+      font-size: 1.8em;
+    }
+
+    
+    #step-1 form{
+      padding: 3%;
+      margin: 5% 0%;
+    }
+
+    .form-group {
+      padding: 0.2em;
+    }
+
+    div.form-group > label {
+      font-size: 0.8em;
+      width: 8em;
+    }
+
+    #vente,#achat{
+      width: 2.5em;
+    }
+
+    .form-group img{
+      width: 10%;
+    }
+
+    .achat, .vente, .salaries{
+      width: 2.5em;
+    }
+
+    form button{
+      font-size: 0.9em;
+    }
+
+    fieldset{
+      border: 0em solid #73b324;
+      padding: 0em;
+    }
+
+  }
+
+

@@ -1,0 +1,676 @@
+@font-face{
+    font-family : "ALLER";
+    src : url('../fonts/ALLER.TTF');
+}
+
+@font-face{
+    font-family : "ALLER_BDIT";
+    src : url('../fonts/ALLER_BDIT.TTF');
+}
+
+@font-face{
+    font-family : "ALLER_IT";
+    src : url('../fonts/ALLER_IT.TTF');
+}
+
+@font-face{
+    font-family : "ALLER_LT";
+    src : url('../fonts/ALLER_LT.TTF');
+}
+
+@font-face{
+    font-family : "ALLER_RG";
+    src : url('../fonts/ALLER_RG.TTF');
+}
+
+
+@charset "UTF-8";
+
+html, body {
+    font-family : "ALLER_LT";
+    color:#ffffff;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    display: block;
+    background: url(../img/backgroundExpertComptable-responsiveW1400.png) no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+  }
+
+.container{
+  margin: auto;
+  width: 95%;
+}
+
+header ul{
+    display: block;
+    padding-left: 0em;
+    overflow:auto;
+    
+}
+
+  header li {
+    float:left;
+    width:20%;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    list-style-type:none;
+    margin:0;
+
+  }
+
+header li p{
+    display: inline-block;
+    margin:0;
+    padding:0;
+} 
+
+
+  header button{
+  font-family : "ALLER";
+  background-color:#81a640;
+  color: #ffffff;
+  font-size:150%;
+  margin-top:0.5em; 
+  float: right;
+  display: block;
+  overflow: auto;
+ }
+
+
+ section.wrapper-title{
+    background-color: #ffffff;
+    margin:0;
+    padding:0.05em 0 0;
+    text-align:center;
+
+}
+
+section.personnage{
+  height: 650px;
+  background: url(../img/personnage-ExpertComptableParis.png) no-repeat center;
+  -webkit-background-size: 85%; /* pour anciens Chrome et Safari */
+  background-size: 85%; /* version standardisée */
+  z-index: 1;
+}
+
+
+p.how-clics {
+  font-size: 2em;
+}
+
+p.how-clics2 {
+  display: inline-block;
+  font-size: 2em;
+  float: left;  
+}
+
+p.how-clics strong, p.how-clics2 strong {
+  font-family : "ALLER_RG";
+}
+
+
+
+
+ul.avantages{
+  font-size: 1.5em;
+  padding-left: 0;
+  list-style-type:none;
+  display: inline-block;
+  width: 45%;
+  margin-top: 0;
+  padding-right: 6%;
+  float: left;
+
+}
+
+.avantages  li{
+  padding: 0.5em 0em;
+}
+
+ul.avantages > li > img{
+  vertical-align: middle;
+}
+
+.avantages p{
+  display: inline;
+}
+
+
+.personnage{
+  z-index:1;
+  position: relative;
+}
+
+
+div.form{
+  display: inline-block;
+  color: #7e7e7e;
+  padding: 0.5em;
+  /*margin-top:10%;*/
+  float: right;
+  width: 45%;
+}
+
+form{
+  border: 0.4em solid #73b324;
+  outline: 0.3em solid #427915;
+  background-color: #ffffff;
+  font-size: 120%;
+  padding: 2em 1em;
+}
+
+fieldset{
+  border: 0.1em solid #73b324;
+  padding:0.5em;
+  position: relative;
+  -webkit-position:relative; 
+}
+
+legend{   
+   display: block;
+   margin:auto;
+   text-align: center;
+   left:20%;
+   line-height: 0.4%;
+}
+
+
+.form-group{
+  padding: 2%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.form-group label{
+  padding-left: 0.3em;
+}
+
+form img{
+  vertical-align: middle;
+}
+
+.achat, .vente, .salaries{
+  height: 1.5em;
+  width: 8em; 
+}
+
+
+input[placeholder]{
+  color: #73b324;
+  text-align: center;
+  font-family : "ALLER_RG";
+  font-size: 70%;
+}
+
+.form h2{
+  font-size: 2.2em;
+  color:#afda63;
+  text-align: center;
+}
+
+  form button{
+      background-color: #00afb2;
+      text-align: center;
+      color: #ffffff;
+      font-family : "ALLER";
+      font-size: 125%;
+      vertical-align: middle;
+      margin: 0 30%;
+  }
+
+
+
+
+
+/****slider responsive begin****/
+
+a {
+  color: #222;
+  }
+
+.rslides{
+  margin: 0 auto;
+  width: 95%;
+  display: inline-block;
+  }
+
+.rslides_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #ffffff;
+  }
+
+.centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../img/themes.gif") no-repeat left top;
+  margin-top: -45px;
+  }
+
+.centered-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+.transparent-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 0;
+  left: 0;
+  display: block;
+  background: #fff; /* Fix for IE6-9 */
+  opacity: 0;
+  filter: alpha(opacity=1);
+  width: 48%;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 91%;
+  }
+
+.transparent-btns_nav.next {
+  left: auto;
+  right: 0;
+  }
+
+.large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("../img/themes.gif") no-repeat left 50%;
+  width: 38px;
+  }
+
+.large-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+  }
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none;
+  }
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+  margin-top: 10px;
+  text-align: center;
+  }
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px;
+  }
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0,0,0, .2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  width: 9px;
+  height: 9px;
+  }
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+  background: #222;
+  background: rgba(0,0,0, .8);
+  }
+/****slider responsive end****/
+h3.partenaires {
+  color: #00A1A4;
+  display: inline-block;
+  font-family : "ALLER_LT";
+  vertical-align: middle;
+  text-align: center;
+  margin: 1% 33% auto;
+  font-size: 1.5em;
+}
+
+h3.partenaires > strong{
+  font-family : "ALLER";
+  font-size: 1.5em;
+
+}
+
+
+ 
+/*---320x480---360x640-------*/
+
+ @media screen and (min-width: 200px) and (max-width: 600px) {
+
+    .container{
+      margin: auto;
+      width: 95%;
+    }
+
+     header li, header button{
+        float:none;
+        width:100%;
+        text-align: center;
+        
+     }
+
+    header li p{
+      text-align: left;
+    } 
+
+    section.wrapper-title  h1  img{ 
+        height: 95%;
+        width: 95%;
+    }
+
+    h3.partenaires {
+    font-size: 0.8em;
+    }
+
+    h3.partenaires strong{
+    font-style: bold;
+    font-size: 1em;
+    }
+
+   p.how-clics,  p.how-clics2{
+      width: 95%;
+      font-size: 1.3em;
+      text-align: center;
+    }
+
+    ul.avantages{
+      font-size: 1em;
+      padding-left: 0;
+      list-style-type:none;
+      width: 100%;
+      display: inline-block;
+    }
+
+    ul.avantages > li > img{
+      width:1.2em; 
+      padding-right: 0.2em;
+      vertical-align: middle;
+    }
+
+    div.form{ 
+      float:none;
+      margin: 0;
+      width: 95%;
+      display: block;
+      position: relative;
+      text-align: center;
+      font-size: 55%;
+    }
+
+    .form-group{
+    padding: 0;
+    }
+
+    form{
+    width: 90%;
+    margin: 0;
+    }
+
+    form img{
+    width:10%;
+    }
+
+    .personnage{
+      display: none;
+    }
+
+ }
+
+/*---768x1024---800x1280-------*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    
+
+
+    header li{
+        padding-right: 6em;
+        font-size: 85%;
+        width: 26%;
+    }
+
+    header ul li img{
+        height: 25%;
+        width: 25%;
+        padding: 0.1em;
+    }
+
+  
+
+   
+    section.wrapper-title  h1  img{ 
+        height: 90%;
+        width: 90%;
+    }
+
+   
+
+    ul.avantages{
+      font-size: 1.2em;
+      display: block;
+      padding-left: 0em;
+      overflow:auto;
+      vertical-align: middle;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+      margin-top: 5%;
+      width: 100%;
+    }
+
+   
+   
+
+    ul.avantages img{
+      width:1.4em; 
+      padding-right: 0.1em;
+    }
+
+     p.clics{
+      width: 95%;
+    }
+
+    div.form{ 
+      margin: 0% 10%;
+      clear: both;
+      /*float:right;*/
+      float:none;
+      position: relative;
+      width: 66%;
+
+    }
+
+    h3.partenaires{
+      font-size: 85%;
+    }
+
+    /*section.personnage{
+      height: 825px;
+      width: 80%;
+      background: url(../img/personnage-ExpertComptableParis768px.png) no-repeat left;
+      -webkit-background-size: 90%; /* pour anciens Chrome et Safari 
+      background-size: 90%; /* version standardisée 
+      z-index: 1;
+    }*/
+
+    section.personnage{
+      display: none;
+    }
+}
+
+/*---980x1280---*/
+@media screen and (min-width:901px) and (max-width: 1300px){
+    header li{
+        padding-right: 6em;
+        width: 25%;
+    }
+
+  
+   .avantages > ul > li > img{
+      width:1.2em; 
+      padding-right: 0.2em;
+    } 
+
+     p.clics{
+      width: 100%;
+    }
+
+    .avantages p{
+      display: inline-block;
+    }
+
+   ul.avantages{
+      display: block;
+      padding-left: 0em;
+      overflow:auto;
+      font-size: 1.4em;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+      width: 100%;
+    }
+
+    div.form{ 
+      display: inline-block;
+      /*float: right;*/
+      float:none;
+      width: 65%;
+      /*margin-top: 0;
+      margin-right: 10%;*/
+      margin: 0 15%;
+    }
+  
+    h3.partenaires{
+      margin: 1.5% 25% auto;
+    }
+    
+    /*section.personnage{
+      height: 815px;
+      width: 70%;
+      background: url(../img/personnage-ExpertComptableParis768px.png) no-repeat left;
+      -webkit-background-size: 90%; /* pour anciens Chrome et Safari 
+      background-size: 90%; /* version standardisé
+      z-index: 1;
+      margin-left: 5%;
+    }*/
+
+    section.personnage{
+      display: none;
+    }
+}
+
+/*---1920x900--*/
+@media screen and (min-width: 1400px){
+    
+    body,html,h2{
+     font-size: 100%;
+    }
+
+    .container{
+    margin: auto;
+    width: 80%;
+    }
+
+    header li{
+    display: inline-block;
+    margin:0;
+    padding-right: 10em;
+    font-size: 150%;
+    }
+
+    header ul li img{
+    height: 18%;
+    width: 18%;
+    padding: 0.1em;
+    }
+
+    section.wrapper-title  h1  img{ 
+        height: 60%;
+        width: 60%;
+    }
+
+    .avantages p{
+      display: inline-block;
+    }
+
+    div.form{
+    margin-top:0; 
+    padding: 0;
+    }
+
+    form{
+      padding: 2em;
+      text-align: center;
+    }
+
+    .form-group{
+      padding: 1em 1em 1em 4em;
+    }
+
+    .large-btns_nav {
+      background: url("../img/themes-res980px.gif") no-repeat scroll left 50% #000;
+      width: 5%;
+    }
+
+    h3.partenaires{
+      margin-top: 1%;
+      font-size: 200%;
+    }
+
+    section.personnage{
+      height: 650px;
+      background: url(../img/personnage-ExpertComptableParis.png) no-repeat center;
+      -webkit-background-size: 60%; /* pour anciens Chrome et Safari */
+      background-size: 60%; /* version standardisée */
+      z-index: 1;
+    }
+
+}
